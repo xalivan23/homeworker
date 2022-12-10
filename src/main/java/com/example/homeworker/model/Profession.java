@@ -1,14 +1,18 @@
-package com.example.homeworker.model;//package com.example.worker.model;
-//
-//import javax.persistence.Column;
-//
-//public enum  Profession {
-//        builder, electrician, plumber, tiler, manicurist;
-//    String name;
-//
-//    Profession( String name) {
-//        this.name=name;
-//    }
-//
-//
-//}
+package com.example.homeworker.model;
+
+import javax.persistence.Column;
+
+public enum Profession {
+    builder("Будівельник"),
+    electrician("Електрик"),
+    plumber("Опалення"),
+    tiler("Водопровід і каналізація"),
+    manicurist("Манікюр");
+    String name;
+
+    Profession(String name) {
+        this.name = name;
+    }
+
+
+}
